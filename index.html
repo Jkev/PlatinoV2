@@ -70,9 +70,9 @@ http://www.templatemo.com/tm-511-journey
                         <div class="row tm-banner-row tm-banner-row-header">
                             <div class="col-xs-12">
                                 <div class="tm-banner-header">
-                                    <h1 class="text-uppercase tm-banner-title">Vamos a iniciar</h1>
+                                    <h1 class="text-uppercase tm-banner-title">¡Momentos que se viven una vez!</h1>
                                     <img src="img/dots-3.png" alt="Dots">
-                                    <p class="tm-banner-subtitle">We assist you to choose the best.</p>
+                                    <p class="tm-banner-subtitle">Te ayudamos a hacerlos realidad.</p>
                                     <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
                                 </div>    
                             </div>  <!-- col-xs-12 -->                      
@@ -83,16 +83,25 @@ http://www.templatemo.com/tm-511-journey
                                 <div class="form-row tm-search-form-row">                                
                                     <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
                                         <label for="inputCity">Elige tu evento</label>
-                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Elige tu salon">
+                                        <select name="room" class="form-control tm-select" id="evento">
+                                            <option value="Boda" selected>Boda</option>
+                                                <option value="XV">XV Años</option>
+                                                <option value="Graduación">Graduación</option>P
+                                                
+                                        </select>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                            <label for="inputCheckIn">Fecha</label>
+                                            <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha">
+                                        </div>
                                     </div>
                                     <div class="form-group tm-form-group tm-form-group-1">                                    
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputRoom">Elige tu salon</label>
                                             <select name="room" class="form-control tm-select" id="inputRoom">
-                                                <option value="1" selected>Sasago Jardin</option>
-                                                <option value="2">Salon 2</option>
-                                                <option value="3">Salon 3</option>
-                                                <option value="4">Salon 4</option>
+                                                <option value="Sasago" selected>Sasago Jardin</option>
+                                                <option value="Huerto">Huerto del Bambú</option>
+                                                <option value="Finca">Finca la Encantada</option>P
+                                                <option value="Palapa">Palapa tu Atardecer</option>
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
@@ -105,25 +114,35 @@ http://www.templatemo.com/tm-511-journey
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
                                             <label for="inputAdult">Invitados</label>     
                                             <select name="adult" class="form-control tm-select" id="inputAdult">
-                                                <option value="1" selected>50 o menos</option>
-                                                <option value="2">100</option>
-                                                <option value="3">150</option>
-                                                <option value="4">200</option>
-                                                
-                                            </select>                                        
+                                                <option value="1" selected>10</option>
+                                                <option value="2">20</option>
+                                                <option value="3">30</option>
+                                                <option value="4">40</option>
+                                                <option value="5">50</option>
+                                                <option value="6">60</option>
+                                                <option value="7">70</option>
+                                                <option value="8">80</option>
+                                                <option value="9">90</option>
+                                                <option value="100">100</option>
+                                                <option value="110">110</option>
+                                                <option value="120">120</option>
+                                                <option value="130">130</option>
+                                                <option value="140">140</option>
+                                                <option value="150">150</option>
+                                                <option value="160">160</option>
+                                                <option value="170">170</option>
+                                                <option value="180">180</option>
+                                                <option value="190">190</option>
+                                                <option value="200">200</option>
+                                                <option value="100">Más de 200</option>
+                                            </select>
+                                                                                    
                                         </div>
                                     </div>
                                 </div> <!-- form-row -->
-                                <div class="form-row tm-search-form-row">
+                                <div class="form-row tm-search-form-row center">
 
-                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                        <label for="inputCheckIn">Check In Date</label>
-                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha">
-                                    </div>
-                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                        <label for="inputCheckOut">Check Out Date</label>
-                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
-                                    </div>
+                                    
                                     <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
                                         <label for="btnSubmit">&nbsp;</label>
                                         <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Cotizar</button>
@@ -141,8 +160,9 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
-                            <h2 class="text-uppercase mb-4">Tu <strong>Evento</strong> es nuestra prioridad.</h2>
-                            <p class="mb-4">Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt mi metus quis lectus. Duis nec lobortis velit. Vivamus id magna vulputate, tempor ante eget, tempus augue. Maecenas ultricies neque magna.</p>
+                            <h2 class="text-uppercase mb-4">HACER REALIDAD TU SUEÑO ES NUESTRA MISION.</h2>
+                            <p class="mb-4">Somos un grupo de expertos a tu servicio para ayudarte a planear, disfrutar y hacer memorable ese día especial.	
+                                Tenemos los mejores espacios al aire libre de la ciudad con vistas inigualables.</p>
                             <a href="#" class="text-uppercase btn-primary tm-btn">Continua Explorando</a>                              
                         </div>
                     </div>
@@ -158,8 +178,8 @@ http://www.templatemo.com/tm-511-journey
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="">Sasago Jardin</h2>
-                        <p>Aenean in lacus nec dolor fermentum congue. Maecenas ut velit pharetra, pharetra tortor sit amet, vulputate sem. Vestibulum mi nibh, faucibus ac eros id, sagittis tincidunt velit. Proin interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar id, sagittis eget diam.</p>
-                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                        <p>Hermoso y confortable jardín en el corazón de la ciudad con los servicios necesarios para todo tipo de celebración. La atención personalizada es nuestra mayor fortaleza ya que de principio a fin estará a su lado nuestro Event Planner. Contamos con servicios Profesionales de Decoración, Diseño de Eventos y Catering. Nos respaldan 8 años de experiencia en realización de eventos exitosos. </p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Cotizar</a>
                     </div>
                 </section>
                 <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">

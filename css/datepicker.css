@@ -1,6 +1,9 @@
 .iconColor {
   color: white;
 }
+.center {
+  justify-content: center;
+}
 .qs-datepicker {
   color: black;
   position: absolute;
