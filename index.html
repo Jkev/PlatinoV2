@@ -79,14 +79,14 @@ http://www.templatemo.com/tm-511-journey
                         </div> <!-- row -->
                         <div class="row tm-banner-row" id="tm-section-search">
 
-                            <form action="https://formsubmit.co/endlezzjkev@gmail.com" method="POST" class="tm-search-form tm-section-pad-2">
-                                <div class="form-row tm-search-form-row">                                
+                            <form action="" method="GET" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                            
                                     <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
                                         <label for="inputCity">Elige tu evento</label>
                                         <select name="Evento" class="form-control tm-select" id="evento">
                                             <option value="Boda" selected>Boda</option>
                                                 <option value="XV">XV Años</option>
-                                                <option value="Graduación">Graduación</option>P
+                                                <option value="Graduación">Graduación</option>
                                                 
                                         </select>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
@@ -97,44 +97,39 @@ http://www.templatemo.com/tm-511-journey
                                     <div class="form-group tm-form-group tm-form-group-1">                                    
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputRoom">Elige tu salon</label>
-                                            <select name="Salon" class="form-control tm-select" id="inputRoom">
-                                                <option value="Sasago" selected>Sasago Jardin</option>
-                                                <option value="Huerto">Huerto del Bambú</option>
-                                                <option value="Finca">Finca la Encantada</option>
-                                                <option value="Palapa">Palapa tu Atardecer</option>
+                                            <select name="Salon" class="form-control tm-select" id="salonSelection" class="salon">
+                                                <option id="salon" value="Sasago" selected>Sasago Jardin</option>
+                                                <option id="salon" value="Huerto">Huerto del Bambú</option>
+                                                <option id="salon" value="Finca">Finca la Encantada</option>
+                                                <option id="salon" value="Palapa">Palapa tu Atardecer</option>
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputRoom">Banquete</label>
-                                            <select name="Banquete" class="form-control tm-select" id="inputRoom">
-                                                <option value="Banquete No" selected>No</option>
-                                                <option value="Banquete SI">SI</option>
+                                            <select name="Banquete" class="form-control tm-select" id="Banquete">
+                                                <option value="No" selected>No</option>
+                                                <option value="Si">Si</option>
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
                                             <label for="inputAdult">Invitados</label>     
-                                            <select name="Invitados" class="form-control tm-select" id="inputAdult">
-                                                <option value="10 invitados" selected>10</option>
-                                                <option value="20 invitados">20</option>
-                                                <option value="30 invitados">30</option>
-                                                <option value="40 invitados">40</option>
-                                                <option value="50 invitados">50</option>
-                                                <option value="60 invitados">60</option>
-                                                <option value="70 invitados">70</option>
-                                                <option value="80 invitados">80</option>
-                                                <option value="90 invitados">90</option>
-                                                <option value="100 invitados">100</option>
-                                                <option value="110 invitados">110</option>
-                                                <option value="120 invitados">120</option>
-                                                <option value="130 invitados">130</option>
-                                                <option value="140 invitados">140</option>
-                                                <option value="150 invitados">150</option>
-                                                <option value="160 invitados">160</option>
-                                                <option value="170 invitados">170</option>
-                                                <option value="180 invitados">180</option>
-                                                <option value="190 invitados">190</option>
-                                                <option value="200 invitados">200</option>
-                                                <option value="100 invitados">Más de 200</option>
+                                            <select name="Invitados" class="form-control tm-select" id="invitadosTotal">
+                                                <option id="invitados" value="60" selected>60</option>
+                                                <option id="invitados" value="70">70</option>
+                                                <option id="invitados" value="80">80</option>
+                                                <option id="invitados" value="90">90</option>
+                                                <option id="invitados" value="100">100</option>
+                                                <option id="invitados" value="110">110</option>
+                                                <option id="invitados" value="120">120</option>
+                                                <option id="invitados" value="130">130</option>
+                                                <option id="invitados" value="140">140</option>
+                                                <option id="invitados" value="150">150</option>
+                                                <option id="invitados" value="160">160</option>
+                                                <option id="invitados" value="170">170</option>
+                                                <option id="invitados" value="180">180</option>
+                                                <option id="invitados" value="190">190</option>
+                                                <option id="invitados" value="200">200</option>
+                                                <option id="invitados" value="+200">Más de 200</option>
                                             </select>
                                                                                     
                                         </div>
@@ -144,8 +139,9 @@ http://www.templatemo.com/tm-511-journey
 
                                     
                                     <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <div><h3 id="total"></h3></div>
                                         <label for="btnSubmit">&nbsp;</label>
-                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Cotizar</button>
+                                        <button class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Cotizar</button>
                                     </div>
                                 </div>                              
                             </form>                             
@@ -672,6 +668,7 @@ http://www.templatemo.com/tm-511-journey
     </div> <!-- .main-content -->
 
     <!-- load JS files -->
+    <script src="./js/index.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
     <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
     <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
