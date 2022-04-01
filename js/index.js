@@ -62,7 +62,7 @@ async function cotizar() {
         // );
         document.getElementById(
           "total"
-        ).innerHTML = `${salon} con ${invitados} invitados $${total}`;
+        ).innerHTML = `${salon} con ${invitados} invitados Banquete incluido $${total}`;
       })
       .catch((error) => {
         console.error(error);
@@ -80,7 +80,7 @@ async function cotizar() {
         // );
         document.getElementById(
           "total"
-        ).innerHTML = `${salon} con ${invitados} invitados Banquete incluido $${total}`;
+        ).innerHTML = `${salon} con ${invitados} invitados $${total}`;
       })
       .catch((error) => {
         console.error(error);
