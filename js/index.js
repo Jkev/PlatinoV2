@@ -49,7 +49,7 @@ async function cotizar() {
       .catch((error) => {
         console.error(error);
       });
-  } else if (salon === "Huerto" && banquete === "No") {
+  } else if (salon === "Huerto" && banquete === "Si") {
     await fetch(
       `https://sheet.best/api/sheets/6327d5a9-4a23-4aa3-b625-f1f188ad9643/cptotalSasago/${invitados}`
     )
@@ -67,7 +67,7 @@ async function cotizar() {
       .catch((error) => {
         console.error(error);
       });
-  } else if (salon === "Huerto" && banquete === "Si") {
+  } else if (salon === "Huerto" && banquete === "No") {
     await fetch(
       `https://sheet.best/api/sheets/6327d5a9-4a23-4aa3-b625-f1f188ad9643/cptotalSasago/${invitados}`
     )
