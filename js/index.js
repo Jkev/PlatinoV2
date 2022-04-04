@@ -13,7 +13,7 @@ async function cotizar() {
   let banquete = document.getElementById("Banquete").value;
   console.log(banquete);
 
-  if (salon === "Sasago" && banquete === "No") {
+  if (salon === "Sasago Jardín" && banquete === "No") {
     await fetch(
       `https://sheet.best/api/sheets/6327d5a9-4a23-4aa3-b625-f1f188ad9643/cptotalSasago/${invitados}`
     )
@@ -24,14 +24,17 @@ async function cotizar() {
         // alert(
         //   `${salon} con ${invitados} invitados tiene un costo total de ${total}`
         // );
+        document.getElementById("salonImage").src = "./img/1.jpeg";
+        document.getElementById("salonName").innerHTML = `${salon}`;
         document.getElementById(
-          "total"
-        ).innerHTML = `${salon} con ${invitados} invitados $${total}`;
+          "infoPack"
+        ).innerHTML = `Reservacion para ${invitados} invitados sin banquete`;
+        document.getElementById("totalInfo").innerHTML = `$${total}`;
       })
       .catch((error) => {
         console.error(error);
       });
-  } else if (salon === "Sasago" && banquete === "Si") {
+  } else if (salon === "Sasago Jardín" && banquete === "Si") {
     await fetch(
       `https://sheet.best/api/sheets/6327d5a9-4a23-4aa3-b625-f1f188ad9643/cptotalSasago/${invitados}`
     )
@@ -42,14 +45,17 @@ async function cotizar() {
         // alert(
         //   `${salon} con ${invitados} invitados con banquete incluido tiene un costo total de ${total}`
         // );
+        document.getElementById("salonImage").src = "./img/1.jpeg";
+        document.getElementById("salonName").innerHTML = `${salon}`;
         document.getElementById(
-          "total"
-        ).innerHTML = `${salon} con ${invitados} invitados Banquete incluido $${total}`;
+          "infoPack"
+        ).innerHTML = `Reservacion para ${invitados} invitados con banquete incluido`;
+        document.getElementById("totalInfo").innerHTML = `$${total}`;
       })
       .catch((error) => {
         console.error(error);
       });
-  } else if (salon === "Huerto" && banquete === "Si") {
+  } else if (salon === "Huerto del Bambú" && banquete === "Si") {
     await fetch(
       `https://sheet.best/api/sheets/6327d5a9-4a23-4aa3-b625-f1f188ad9643/cptotalSasago/${invitados}`
     )
@@ -60,14 +66,17 @@ async function cotizar() {
         // alert(
         //   `${salon} con ${invitados} invitados tiene un costo total de ${total}`
         // );
+        document.getElementById("salonImage").src = "./img/10.jpg";
+        document.getElementById("salonName").innerHTML = `${salon}`;
         document.getElementById(
-          "total"
-        ).innerHTML = `${salon} con ${invitados} invitados Banquete incluido $${total}`;
+          "infoPack"
+        ).innerHTML = `Reservacion para ${invitados} invitados con banquete incluido`;
+        document.getElementById("totalInfo").innerHTML = `$${total}`;
       })
       .catch((error) => {
         console.error(error);
       });
-  } else if (salon === "Huerto" && banquete === "No") {
+  } else if (salon === "Huerto del Bambú" && banquete === "No") {
     await fetch(
       `https://sheet.best/api/sheets/6327d5a9-4a23-4aa3-b625-f1f188ad9643/cptotalSasago/${invitados}`
     )
@@ -78,9 +87,12 @@ async function cotizar() {
         // alert(
         //   `${salon} con ${invitados} invitados con banquete incluido tiene un costo total de ${total}`
         // );
+        document.getElementById("salonImage").src = "./img/10.jpg";
+        document.getElementById("salonName").innerHTML = `${salon}`;
         document.getElementById(
-          "total"
-        ).innerHTML = `${salon} con ${invitados} invitados $${total}`;
+          "infoPack"
+        ).innerHTML = `Reservacion para ${invitados} sin banquete`;
+        document.getElementById("totalInfo").innerHTML = `$${total}`;
       })
       .catch((error) => {
         console.error(error);
